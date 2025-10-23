@@ -1,15 +1,12 @@
 # VQ-BeT: Behavior Generation with Latent Actions
 
-Official implementation of VQ-BeT: Behavior Generation with Latent Actions.
+Implementation of VQ-BeT: Behavior Generation with Latent Actions. (fork from official repo)
 
 
-project website: https://sjlee.cc/vq-bet
-
-<img src="https://github.com/jayLEE0301/vq_bet/assets/30570922/da0654cf-a15a-4ea3-9f90-c389f06e8796">
 
 ## Installation
 
-- Make a conda environemnt (We tested on python 3.7 and 3.9) and activate the environment
+- Make a conda environemnt with python 3.9 and activate the environment
 
   ```bash
   conda create -n vq-bet python=3.9
@@ -18,7 +15,7 @@ project website: https://sjlee.cc/vq-bet
 
 - Clone this repo
   ```bash
-  git clone https://github.com/jayLEE0301/vq_bet_official.git
+  git clone https://github.com/daiqiyue/vq_bet.git
   export PROJ_ROOT=$(pwd)
   ```
 
