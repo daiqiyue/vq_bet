@@ -23,7 +23,7 @@ Implementation of VQ-BeT: Behavior Generation with Latent Actions. (fork from of
 
 - Install VQ-BeT
   ```bash
-  cd $PROJ_ROOT/vq_bet_official
+  cd $PROJ_ROOT/vq_bet
   pip install -r requirements.txt
   pip install -e .
   ```
@@ -31,13 +31,15 @@ Implementation of VQ-BeT: Behavior Generation with Latent Actions. (fork from of
 
 - Install [MuJoCo](https://github.com/deepmind/mujoco) and D4RL
 
+  NOTE: Please install Mujoco 2.1.0 !!!!! so that it can work with mujoco-py
+
   D4RL can be installed by cloning the repository as follows:
   ```bash
   cd $PROJ_ROOT
   git clone https://github.com/Farama-Foundation/d4rl.git
   cd $PROJ_ROOT/d4rl
   pip install -e .
-  cd $PROJ_ROOT/vq_bet_official
+  cd $PROJ_ROOT/vq_bet
   ```
 
   Also, to run UR3 env, you should install UR3 env
@@ -63,11 +65,17 @@ Implementation of VQ-BeT: Behavior Generation with Latent Actions. (fork from of
 - Download datasets [here](https://drive.google.com/file/d/1aHb4kV0mpMvuuApBpVGYjAPs6MCNVTNb/view?usp=sharing).
   - Optionally, use [`gdown`](https://github.com/wkentaro/gdown) to do that: `gdown --fuzzy https://drive.google.com/file/d/1aHb4kV0mpMvuuApBpVGYjAPs6MCNVTNb/view?usp=sharing`.
 
-- Add path to your dataset directory and save path in `./examples/configs/env_vars/env_vars.yaml`.
+- Creating a saved path
+  '''bash
+  cd $PROJ_ROOT
+  mkdir saved
+  '''
+
+- Add path to your dataset directory and save path in `./examples/configs/env_vars/env_vars.yaml`. 
   ```bash
   # TODO fill these out
-  dataset_path: PATH_TO_YOUR_[env_name]_DATASET
-  save_path: YOUR_SAVE_PATH
+  dataset_path: PATH_TO_YOUR_[env_name]_DATASET      
+  save_path: YOUR_SAVE_PATH           
   wandb_entity: YOUR_WANDB_ENTITY
   ```
 
