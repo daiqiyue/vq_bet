@@ -71,7 +71,7 @@ Implementation of VQ-BeT: Behavior Generation with Latent Actions. (fork from of
   mkdir saved
   ```
 
-- Add path to your dataset directory and save path in `./examples/configs/env_vars/env_vars.yaml`. 
+- Add path to your dataset directory and save path in `./examples/configs/env_vars/env_vars.yaml`. fill the save_path with the path to the saved dir you just created
   ```bash
   # TODO fill these out
   dataset_path: PATH_TO_YOUR_[env_name]_DATASET      
