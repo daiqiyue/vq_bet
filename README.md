@@ -66,10 +66,10 @@ Implementation of VQ-BeT: Behavior Generation with Latent Actions. (fork from of
   - Optionally, use [`gdown`](https://github.com/wkentaro/gdown) to do that: `gdown --fuzzy https://drive.google.com/file/d/1aHb4kV0mpMvuuApBpVGYjAPs6MCNVTNb/view?usp=sharing`.
 
 - Creating a saved path
-  '''bash
+  ```bash
   cd $PROJ_ROOT
   mkdir saved
-  '''
+  ```
 
 - Add path to your dataset directory and save path in `./examples/configs/env_vars/env_vars.yaml`. 
   ```bash
